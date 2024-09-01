@@ -34,6 +34,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
     }
     .loader {
   --w:10ch;
@@ -50,6 +51,7 @@
         calc( 0*var(--w)) 0 #000,calc(-1*var(--w)) 0 #000,calc(-2*var(--w)) 0 #000,calc(-3*var(--w)) 0 #000,calc(-4*var(--w)) 0 #000,
         calc(-5*var(--w)) 0 #000,calc(-6*var(--w)) 0 #000,calc(-7*var(--w)) 0 #000,calc(-8*var(--w)) 0 #000,calc(-9*var(--w)) 0 #000;
   animation: l20 2s infinite linear;
+  margin-top: 20px;
 }
 .loader:before {
   content:"Loading...";
@@ -90,17 +92,17 @@
   </style>
 </head>
 <body>
-<div class="parentDiv"><div class="loader"></div></div>
+<div class="parentDiv"><img src="icons/logo.png" height="80px"/><div class="loader"></div></div>
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=72832599');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2294733500');
       });
     }
   </script>
-  <script src="main.dart.js?v=72832599" type="application/javascript"></script>
+  <script src="main.dart.js?v=2294733500" type="application/javascript"></script>
 </body>
 </html>
